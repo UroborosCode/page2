@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__box">
+                <div class="container">
+                    <div class="header__box-top">
+                        <p class="header__address header__c1"><i class="fas fa-map-marker-alt"></i>ул. Коллонтай, 11 (метро Пр. Большевиков)</p>
+                        <p class="header__time header__c2"><i class="far fa-clock"></i>Круглосуточно</p>
+                        <div class="header__box-link-tell">
+                            <a class="header__link-tell header__c1" href="#"><i class="fas fa-phone-alt"></i>+7 (812) 242-87-55</a>
+                            <a class="header__link-tell header__c2" href="#">+7 (812) 242-87-44</a>
+                        </div>
+                        <button class="header__btn">
+                            <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.4705 9.93844C15.4402 9.582 15.0131 9.31135 14.5165 9.3339L5.25467 9.75435C4.75804 9.77689 4.38003 10.0841 4.41032 10.4405C4.44061 10.797 4.86775 11.0676 5.36438 11.0451L14.6262 10.6246C15.1228 10.6021 15.5008 10.2949 15.4705 9.93844Z" fill="white"/>
+                                <path d="M5.25436 13.1779C4.76006 13.2026 4.38379 13.5403 4.41392 13.9322C4.44404 14.3241 4.86915 14.6218 5.36345 14.5971L10.9621 14.3173C11.4564 14.2926 11.8326 13.9549 11.8025 13.563C11.7724 13.1711 11.3473 12.8735 10.853 12.8982L5.25436 13.1779Z" fill="white"/>
+                                <path d="M8.11937 21.1114L5.29147 21.2789C4.359 21.3341 3.55504 20.6163 3.49932 19.6787L2.61001 4.71539C2.55429 3.7778 3.26758 2.97008 4.20005 2.91486L14.5956 2.29918C15.5281 2.24395 16.332 2.96181 16.3878 3.8994L16.6985 9.12805C16.7264 9.59761 17.1276 9.95582 17.5946 9.92816C18.0616 9.90051 18.4175 9.49746 18.3896 9.0279L18.0789 3.79924C17.9674 1.92407 16.3595 0.48835 14.4946 0.598802L4.09899 1.21448C2.23405 1.32494 0.807466 2.94037 0.918912 4.81555L1.80822 19.7789C1.91967 21.654 3.52759 23.0897 5.39253 22.9793L8.22043 22.8118C8.68742 22.7842 9.04336 22.3811 9.01545 21.9115C8.98754 21.442 8.58637 21.0838 8.11937 21.1114Z" fill="white"/>
+                                <path d="M20.2492 13.2676C19.1854 12.3446 17.5526 12.4404 16.6101 13.4804L12.1825 18.3547C12.0884 18.4582 12.022 18.5828 11.9891 18.7175L11.1663 22.0816C11.0933 22.3799 11.1921 22.6933 11.4241 22.8996C11.5978 23.0541 11.8257 23.1302 12.0537 23.1168C12.13 23.1123 12.2065 23.0978 12.2808 23.0728L15.6859 21.9312C15.826 21.8843 15.9514 21.8027 16.0497 21.6943L20.468 16.8287C21.4111 15.788 21.313 14.1905 20.2492 13.2676ZM14.9147 20.412L13.2017 20.9864L13.6106 19.3143L16.5981 16.0254L17.8845 17.1415L14.9147 20.412ZM19.1824 15.7123L19.0261 15.8843L17.7399 14.7685L17.8956 14.597C18.21 14.2501 18.7543 14.2182 19.1089 14.5258C19.4635 14.8335 19.4962 15.3659 19.1824 15.7123Z" fill="white"/>
+                                <path d="M14.5105 5.77799L5.2488 6.19844C4.75218 6.22098 4.37417 6.52819 4.40446 6.88463C4.43475 7.24106 4.86188 7.51172 5.35851 7.48918L14.6202 7.06873C15.1168 7.04618 15.4949 6.73898 15.4646 6.38254C15.4343 6.0261 15.0071 5.75545 14.5105 5.77799Z" fill="white"/>
+                            </svg>                                
+                            <p class="header__btn-text">Записаться</p> 
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__box-b">
+                <div class="container">
+                    <div class="header__box-bottom">
+                        <div class="header__box-logo">
+                            <svg width="60" height="61" viewBox="0 0 60 61" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <ellipse cx="29.6042" cy="30.8269" rx="29.5" ry="30.0862" transform="rotate(-0.0701789 29.6042 30.8269)" fill="#FF7800"/>
+                                <rect x="2.22754" y="2.2417" width="55.4024" height="57.2371" transform="rotate(-0.0701789 2.22754 2.2417)" fill="url(#pattern0)"/>
+                                <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_1955_630" transform="translate(-0.00993494) scale(0.0132451 0.0128205)"/>
+                                </pattern>
+                                <image id="image0_1955_630" width="77" height="78" xlink:href="data:image/png;base64,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"/>
+                                </defs>
+                            </svg>
+                            <div class="header__logo-inf">
+                                <h1 class="header__logo-head">ДокВет</h1>
+                                <p class="header__logo-text">Ветеринарный центр</p>
+                            </div>
+                        </div>
+                        <div class="header__box-nav">
+                            <div class="header__nav-media">
+                                <button class="header__nav-media-btn">
+                                    <svg width="64" height="28" viewBox="0 0 64 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <line x1="2" y1="2" x2="62" y2="2" stroke="#1B274A" stroke-width="4" stroke-linecap="round"/>
+                                        <line x1="2" y1="14" x2="50.5714" y2="14" stroke="#1B274A" stroke-width="4" stroke-linecap="round"/>
+                                        <line x1="2" y1="26" x2="39.1429" y2="26" stroke="#1B274A" stroke-width="4" stroke-linecap="round"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <nav class="header__nav">
+                                <ul class="header__list">
+                                    <p class="header__list-item-text">
+                                        Услуги
+                                        <svg width="8" height="5" viewBox="0 0 8 5"         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.0800781 4.85278L3.57506 0.8227L7.07991 4.84421" fill="#1B274A"/>
+                                        </svg>
+                                    </p>
+                                    <li class="header__list-item">
+                                        <a class="header__list-item-link" href="#">lorem</a>
+                                    </li>
+                                    <li class="header__list-item">
+                                        <a class="header__list-item-link" href="#">lorem</a>
+                                    </li>
+                                    <li class="header__list-item">
+                                        <a class="header__list-item-link" href="#">lorem</a>
+                                    </li>
+                                    <li class="header__list-item">
+                                        <a class="header__list-item-link" href="#">lorem</a>
+                                    </li>
+                                </ul>
+                                <a class="header__nav-link" href="#">О нас</a>
+                                <a class="header__nav-link" href="#">Блог</a>
+                                <a class="header__nav-link" href="#">Контакты</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header__media-menu header__media-menu-close">
+        <nav class="header__media-menu-nav">
+            <button class="header__media-menu-btn-close">
+                <i class="far fa-window-close"></i>
+            </button>
+            <ul class="header__media-menu-list">
+                <a class="header__media-menu-list-item-text" href="#">
+                    Услуги
+                </a>
+                <li class="header__media-menu-list-item">
+                    <a class="header__media-menu-list-item-link" href="#">lorem</a>
+                </li>
+                <li class="header__media-menu-list-item">
+                    <a class="header__media-menu-list-item-link" href="#">lorem</a>
+                </li>
+                <li class="header__media-menu-list-item">
+                    <a class="header__media-menu-list-item-link" href="#">lorem</a>
+                </li>
+                <li class="header__media-menu-list-item">
+                    <a class="header__media-menu-list-item-link" href="#">lorem</a>
+                </li>
+            </ul>
+            <a class="header__media-menu-nav-link" href="#">О нас</a>
+            <a class="header__media-menu-nav-link" href="#">Блог</a>
+            <a class="header__media-menu-nav-link" href="#">Контакты</a>
+        </nav>
+    </div>
+
+  <div class="wrapper">
+    <main class="main">
+        
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link breadcrumbs__link-p" href="#">
+                            <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.5348 8.21459L11.2438 0.679602C11.1472 0.608907 11.0306 0.570801 10.9108 0.570801C10.7911 0.570801 10.6745 0.608907 10.5778 0.679602L0.285832 8.21459C0.224102 8.25754 0.171585 8.3124 0.131369 8.37594C0.0911533 8.43949 0.0640514 8.51043 0.0516577 8.58461C0.0392639 8.65878 0.0418286 8.73468 0.0592008 8.80785C0.0765729 8.88101 0.108402 8.94997 0.152815 9.01065C0.197228 9.07134 0.253329 9.12253 0.317817 9.16121C0.382305 9.1999 0.453878 9.22529 0.528326 9.23591C0.602774 9.24652 0.678593 9.24215 0.751323 9.22303C0.824054 9.20391 0.892227 9.17044 0.951832 9.12459L10.9098 1.8336L20.8678 9.12459C20.9887 9.20869 21.1377 9.24218 21.2829 9.21791C21.4281 9.19364 21.5581 9.11354 21.6451 8.99472C21.732 8.87589 21.7691 8.72778 21.7483 8.582C21.7275 8.43623 21.6505 8.30437 21.5338 8.21459H21.5348Z" fill="#FFA14D" fill-opacity="0.64"/>
+                                <path d="M18.8082 9.25098C18.6586 9.25098 18.5152 9.3104 18.4094 9.41617C18.3036 9.52194 18.2442 9.66539 18.2442 9.81497V18.794H13.7312V13.894C13.7173 13.1551 13.414 12.4512 12.8866 11.9336C12.3592 11.4161 11.6497 11.1261 10.9107 11.1261C10.1717 11.1261 9.46227 11.4161 8.93484 11.9336C8.40741 12.4512 8.10413 13.1551 8.09022 13.894V18.794H3.57722V9.81497C3.57722 9.66539 3.5178 9.52194 3.41203 9.41617C3.30626 9.3104 3.1628 9.25098 3.01322 9.25098C2.86364 9.25098 2.72018 9.3104 2.61441 9.41617C2.50864 9.52194 2.44922 9.66539 2.44922 9.81497V19.3579C2.44922 19.5075 2.50864 19.651 2.61441 19.7568C2.72018 19.8625 2.86364 19.922 3.01322 19.922H8.65422C8.79614 19.9219 8.93281 19.8683 9.03698 19.7719C9.14114 19.6756 9.20515 19.5434 9.21622 19.402C9.21698 19.3873 9.21698 19.3726 9.21622 19.3579V13.893C9.21622 13.4441 9.39454 13.0136 9.71194 12.6962C10.0293 12.3788 10.4598 12.2005 10.9087 12.2005C11.3576 12.2005 11.7881 12.3788 12.1055 12.6962C12.4229 13.0136 12.6012 13.4441 12.6012 13.893V19.3579C12.6005 19.3723 12.6005 19.3866 12.6012 19.4009C12.6121 19.5426 12.676 19.675 12.7801 19.7716C12.8843 19.8682 13.0211 19.9219 13.1632 19.922H18.8042C18.9538 19.922 19.0973 19.8625 19.203 19.7568C19.3088 19.651 19.3682 19.5075 19.3682 19.3579V9.81497C19.3682 9.66608 19.3094 9.52323 19.2044 9.41757C19.0995 9.31192 18.9571 9.25203 18.8082 9.25098Z" fill="#FFA14D" fill-opacity="0.64"/>
+                            </svg>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">
+                            Вакансии
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="first-box">
+            <div class="container">
+                <div class="first-box__wrapp">
+                    <h3 class="first-box__head  all-head">Работа в ДокВет</h3>
+                    <div class="first-box__inner">
+                        <div class="first-box__content">
+                            <p class="first-box__text1">
+                                Наша клиника — амбициозный проект с миссией изменить ветеринарную индустрию:
+                            </p>
+                            <ul class="first-box__list">
+                                <li class="first-box__list-item">
+                                    <span class="first-box__text2">
+                                        <p class="first-box__text3">Область в ветеринарии,</p>
+                                         которая занимается диагностикой Врач поможет Вам оформить
+                                    </span>
+                                </li>
+                                <li class="first-box__list-item">
+                                    <span class="first-box__text2">
+                                        <p class="first-box__text3">Область в ветеринарии,</p>
+                                         которая занимается диагностикой Врач поможет Вам оформить ветеринарный паспорт и чипировать Вашего питомца
+                                    </span>
+                                </li>
+                                <li class="first-box__list-item">
+                                    <span class="first-box__text2">
+                                        <p class="first-box__text3">Область в ветеринарии,</p>
+                                         которая занимается диагностикой
+                                    </span>
+                                </li>
+                            </ul>
+                            <p class="first-box__text2">
+                                Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!
+                            </p>
+                        </div>
+                        <div class="first-box__box-img">
+                            <img class="first-box__images" src="images/first-box-img.png" alt="images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="vacancy">
+            <div class="container">
+                <h3 class="vacancy__head all-head">Открытые вакансии</h3>
+                <div class="vacancy__wrapp" data-check>
+                    <div class="vacancy__inner" data-idContent>
+                        <!-- vacancy__btn-box-active -->
+                        <button class="vacancy__btn-box">
+                            <span class="vacancy__btn-span">Ветеринарный врач / ветеринарный врач хирург</span>
+                            <div class="vacancy__box-marc">
+                                <p class="vacancy__btn-p">
+                                    Подробнее
+                                </p>
+                                <i class="vacancy__marc-down fas fa-chevron-down"></i>
+                                <!-- vacancy__active -->
+                                <i class="vacancy__marc-up  vacancy__active fas fa-chevron-up"></i>
+                            </div>
+                        </button>
+                        <div class="vacancy__box-content vacancy__active">
+                            <span class="vacancy__box-content-head">Наши ожидания:</span>
+                            <ul class="vacancy__box-content-list">
+                                <li class="vacancy__box-content-list-item"><span> Оконченное высшее профильное образование</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Практический опыт работы от 2-3 лет</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Любовь к животным и желание им помочь</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Наличие сертификатов о пройденном дополнительном образовании</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Заинтересованность в развитии и совершенствовании своих знаний  в области ветеринарии</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде</span></li>
+                            </ul>
+                            <span class="vacancy__box-content-text">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</span>
+                            <span class="vacancy__box-content-head">Задачи:</span>
+                            <ol class="vacancy__box-content-list-num">
+                                <li class="vacancy__box-content-list-item-num"><span> Оконченное высшее профильное образование</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Практический опыт работы от 2-3 лет</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Любовь к животным и желание им помочь</span></li>
+                            </ol>
+                            <span class="vacancy__box-content-head">Условии труда:</span>
+                            <ol class="vacancy__box-content-list-num">
+                                <li class="vacancy__box-content-list-item-num"><span>  Оконченное высшее профильное образование</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Практический опыт работы от 2-3 лет</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Любовь к животным и желание им помочь</span></li>
+                            </ol>
+                            <span class="vacancy__box-content-text">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</span>
+                            <a class="vacancy__box-content-link" href="#">Откликнуться</a>
+                        </div>
+                    </div>
+                    <div class="vacancy__inner" data-idContent>
+                        <button class="vacancy__btn-box">
+                            <span class="vacancy__btn-span">Ассистент ветеринарного врача / операционная сестра</span>
+                            <div class="vacancy__box-marc">
+                                <p class="vacancy__btn-p">
+                                    Подробнее
+                                </p>
+                                <i class="vacancy__marc-down fas fa-chevron-down"></i>
+                                <i class="vacancy__marc-up vacancy__active fas fa-chevron-up"></i>
+                            </div>
+                        </button>
+                        <div class="vacancy__box-content vacancy__active">
+                            <span class="vacancy__box-content-head">Наши ожидания:</span>
+                            <ul class="vacancy__box-content-list">
+                                <li class="vacancy__box-content-list-item"><span> Оконченное высшее профильное образование</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Практический опыт работы от 2-3 лет</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Любовь к животным и желание им помочь</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Наличие сертификатов о пройденном дополнительном образовании</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Заинтересованность в развитии и совершенствовании своих знаний  в области ветеринарии</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде</span></li>
+                            </ul>
+                            <span class="vacancy__box-content-text">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</span>
+                            <span class="vacancy__box-content-head">Задачи:</span>
+                            <ol class="vacancy__box-content-list-num">
+                                <li class="vacancy__box-content-list-item-num"><span> Оконченное высшее профильное образование</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Практический опыт работы от 2-3 лет</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Любовь к животным и желание им помочь</span></li>
+                            </ol>
+                            <span class="vacancy__box-content-head">Условии труда:</span>
+                            <ol class="vacancy__box-content-list-num">
+                                <li class="vacancy__box-content-list-item-num"><span>  Оконченное высшее профильное образование</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Практический опыт работы от 2-3 лет</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Любовь к животным и желание им помочь</span></li>
+                            </ol>
+                            <span class="vacancy__box-content-text">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</span>
+                            <a class="vacancy__box-content-link" href="#">Откликнуться</a>
+                        </div>
+                    </div>
+                    <div class="vacancy__inner" data-idContent>
+                        <button class="vacancy__btn-box">
+                            <span class="vacancy__btn-span">Менеджер по работе с клиентами</span>
+                            <div class="vacancy__box-marc">
+                                <p class="vacancy__btn-p">
+                                    Подробнее
+                                </p>
+                                <i class="vacancy__marc-down fas fa-chevron-down"></i>
+                                <i class="vacancy__marc-up vacancy__active fas fa-chevron-up"></i>
+                            </div>                 
+                        </button>
+                        <div class="vacancy__box-content vacancy__active">
+                            <span class="vacancy__box-content-head">Наши ожидания:</span>
+                            <ul class="vacancy__box-content-list">
+                                <li class="vacancy__box-content-list-item"><span> Оконченное высшее профильное образование</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Практический опыт работы от 2-3 лет</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Любовь к животным и желание им помочь</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Наличие сертификатов о пройденном дополнительном образовании</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Заинтересованность в развитии и совершенствовании своих знаний  в области ветеринарии</span></li>
+                                <li class="vacancy__box-content-list-item"><span> Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде</span></li>
+                            </ul>
+                            <span class="vacancy__box-content-text">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</span>
+                            <span class="vacancy__box-content-head">Задачи:</span>
+                            <ol class="vacancy__box-content-list-num">
+                                <li class="vacancy__box-content-list-item-num"><span> Оконченное высшее профильное образование</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Практический опыт работы от 2-3 лет</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Любовь к животным и желание им помочь</span></li>
+                            </ol>
+                            <span class="vacancy__box-content-head">Условии труда:</span>
+                            <ol class="vacancy__box-content-list-num">
+                                <li class="vacancy__box-content-list-item-num"><span>  Оконченное высшее профильное образование</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Практический опыт работы от 2-3 лет</span></li>
+                                <li class="vacancy__box-content-list-item-num"><span>  Любовь к животным и желание им помочь</span></li>
+                            </ol>
+                            <span class="vacancy__box-content-text">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</span>
+                            <a class="vacancy__box-content-link" href="#">Откликнуться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="choose">
+            <div class="container">
+                <h3 class="choose__head all-head">Почему выбирают нас?</h3>
+                <div class="choose__wrapp">
+                    <div class="choose__inner">
+                        <div class="choose__content">
+                            <img class="choose__images" src="images/choose-1.png" alt="images">
+                        </div>
+                        <div class="choose__content">
+                            <div class="choose__content-box">
+                                <h4 class="choose__content-head">Командный подход</h4>
+                                <p class="choose__content-text">Под крышей нашего центра собраны самые разные специалисты, что создает общую синергию и ведет к наиболее полному уходу за Вашим питомцем.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose__inner">
+                        <div class="choose__content choose__content-grid1">
+                            <img class="choose__images" src="images/choose-2.png" alt="images">
+                        </div>
+                        <div class="choose__content choose__content-grid2">
+                            <div class="choose__content-box">
+                                <h4 class="choose__content-head">Инновации и исследования </h4>
+                                <p class="choose__content-text">Под крышей нашего центра собраны самые разные специалисты, что создает общую синергию и ведет к наиболее полному уходу за Вашим питомцем.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="choose__inner">
+                        <div class="choose__content">
+                            <img class="choose__images" src="images/choose-3.png" alt="images">
+                        </div>
+                        <div class="choose__content">
+                            <div class="choose__content-box">
+                                <h4 class="choose__content-head">Экспертные ветеринары 
+                                    в каждом направлении</h4>
+                                <p class="choose__content-text">Под крышей нашего центра собраны самые разные специалисты, что создает общую синергию и ведет к наиболее полному уходу за Вашим питомцем.Под крышей нашего центра собраны самые разные специалисты, что создает общую синергию и ведет к наиболее полному.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <div class="feedback__box">
+                    <div class="feedback__box-img">
+                        <div class="feedback__box-img-wrapp">
+                            <img src="images/feedback.png" alt="images" class="feedback__images">
+                            <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="41" cy="41" r="41" fill="#FFA14D"/>
+                                <g clip-path="url(#clip0_1955_477)">
+                                <path d="M56.416 46.75C59.5917 46.75 62.166 44.1756 62.166 41C62.166 37.8244 59.5917 35.25 56.416 35.25C53.2404 35.25 50.666 37.8244 50.666 41C50.666 44.1756 53.2404 46.75 56.416 46.75Z" fill="white"/>
+                                <path d="M48.7506 39.0833C49.8092 39.0833 50.6673 38.2252 50.6673 37.1666C50.6673 36.1081 49.8092 35.25 48.7506 35.25C47.6921 35.25 46.834 36.1081 46.834 37.1666C46.834 38.2252 47.6921 39.0833 48.7506 39.0833Z" fill="white"/>
+                                <path d="M52.5836 35.25C53.6422 35.25 54.5003 34.3919 54.5003 33.3334C54.5003 32.2749 53.6422 31.4167 52.5836 31.4167C51.5251 31.4167 50.667 32.2749 50.667 33.3334C50.667 34.3919 51.5251 35.25 52.5836 35.25Z" fill="white"/>
+                                <path d="M60.2506 35.25C61.3092 35.25 62.1673 34.3919 62.1673 33.3334C62.1673 32.2749 61.3092 31.4167 60.2506 31.4167C59.1921 31.4167 58.334 32.2749 58.334 33.3334C58.334 34.3919 59.1921 35.25 60.2506 35.25Z" fill="white"/>
+                                <path d="M64.0836 39.0833C65.1421 39.0833 66.0003 38.2252 66.0003 37.1666C66.0003 36.1081 65.1421 35.25 64.0836 35.25C63.0251 35.25 62.167 36.1081 62.167 37.1666C62.167 38.2252 63.0251 39.0833 64.0836 39.0833Z" fill="white"/>
+                                <path d="M43.9581 60.1666C38.1386 60.1603 33.4227 55.4443 33.4164 49.625V42.9166H29.583V49.625C29.583 57.5641 36.0189 64 43.958 64C51.8971 64 58.333 57.5641 58.333 49.625H54.4997C54.4934 55.4443 49.7775 60.1603 43.9581 60.1666Z" fill="white"/>
+                                <path d="M43 29.5V19.9166C43 18.8581 42.1419 18 41.0834 18H35.3334V21.8334H39.1667V29.5C39.1667 33.7342 35.7342 37.1666 31.5001 37.1666C27.2659 37.1666 23.8334 33.7342 23.8334 29.5V21.8334H27.6667V18H21.9167C20.8581 18 20 18.8581 20 19.9166V29.5C20 35.8512 25.1488 41 31.5 41C37.8512 41 43 35.8512 43 29.5Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1955_477">
+                                <rect width="46" height="46" fill="white" transform="translate(20 18)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>                                
+                        </div>
+                        <p class="feedback__name">Воробьева Мария Олеговна</p>
+                        <p class="feedback__position">Главный врач ветклиники</p>
+
+                    </div>
+                    <div class="feedback__box-form">
+                        <h3 class="feedback__form-head">Возникли вопросы или жалобы?</h3>
+                        <p class="feedback__form-text">Оставьте его в форме ниже
+                            и наши менеджеры обязательно Вам ответят!</p>
+                            <form class="feedback__form" action="">
+                                <div class="feedback__form-mask">
+                                    <input class="feedback__form-input" type="text" placeholder="Имя">
+                                </div>
+                                <div class="feedback__form-mask">
+                                    <input class="feedback__form-input" type="tel" placeholder="Телефон">
+                                </div>
+                                <div class="feedback__form-mask">
+                                    <span class="feedback__form-mark">Комментарий</span>
+                                    <textarea class="feedback__form-textarea" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the ..." name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="feedback__form-mask feedback__form-mask-checkbox">
+                                    <input class="feedback__form-checkbox" type="checkbox" name="" id="">
+                                    <p class="feedback__form-text">
+                                        Я соглашаюсь на обработку моих персональных данных в соответствии с указанными 
+                                        <a class="feedback__form-link" href="#">здесь правилами</a>
+                                    </p>
+                                </div>
+                                <div class="feedback__form-mask">
+                                    <input class="feedback__form-submit" type="submit">
+                                </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location">
+            <div class="container">
+                <div class="location__contacts">
+                    <a class="location__link" href="#">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="25" cy="25.0002" r="25" fill="#FFA14D"/>
+                            <path d="M24.9996 8.33374C29.528 8.33374 30.093 8.35041 31.8696 8.43374C33.6446 8.51707 34.8529 8.79541 35.9163 9.20874C37.0163 9.63207 37.9429 10.2054 38.8696 11.1304C39.7171 11.9636 40.3729 12.9714 40.7913 14.0837C41.2029 15.1454 41.4829 16.3554 41.5663 18.1304C41.6446 19.907 41.6663 20.472 41.6663 25.0003C41.6663 29.5287 41.6496 30.0936 41.5663 31.8703C41.4829 33.6453 41.2029 34.8536 40.7913 35.917C40.3741 37.0299 39.7181 38.038 38.8696 38.8703C38.0362 39.7175 37.0285 40.3732 35.9163 40.7919C34.8546 41.2036 33.6446 41.4836 31.8696 41.5669C30.093 41.6453 29.528 41.6669 24.9996 41.6669C20.4713 41.6669 19.9063 41.6503 18.1297 41.5669C16.3547 41.4836 15.1463 41.2036 14.083 40.7919C12.9702 40.3744 11.9622 39.7185 11.1297 38.8703C10.282 38.0373 9.62622 37.0294 9.20801 35.917C8.79467 34.8553 8.51634 33.6453 8.43301 31.8703C8.35467 30.0936 8.33301 29.5287 8.33301 25.0003C8.33301 20.472 8.34967 19.907 8.43301 18.1304C8.51634 16.3537 8.79467 15.147 9.20801 14.0837C9.62506 12.9707 10.281 11.9626 11.1297 11.1304C11.9625 10.2825 12.9704 9.62662 14.083 9.20874C15.1463 8.79541 16.353 8.51707 18.1297 8.43374C19.9063 8.35541 20.4713 8.33374 24.9996 8.33374ZM24.9996 16.667C22.7895 16.667 20.6699 17.545 19.1071 19.1078C17.5443 20.6706 16.6663 22.7902 16.6663 25.0003C16.6663 27.2105 17.5443 29.3301 19.1071 30.8929C20.6699 32.4557 22.7895 33.3336 24.9996 33.3336C27.2098 33.3336 29.3294 32.4557 30.8922 30.8929C32.455 29.3301 33.3329 27.2105 33.3329 25.0003C33.3329 22.7902 32.455 20.6706 30.8922 19.1078C29.3294 17.545 27.2098 16.667 24.9996 16.667ZM35.8329 16.2504C35.8329 15.6978 35.6134 15.1679 35.2227 14.7772C34.832 14.3865 34.3021 14.167 33.7496 14.167C33.1971 14.167 32.6672 14.3865 32.2765 14.7772C31.8858 15.1679 31.6663 15.6978 31.6663 16.2504C31.6663 16.8029 31.8858 17.3328 32.2765 17.7235C32.6672 18.1142 33.1971 18.3337 33.7496 18.3337C34.3021 18.3337 34.832 18.1142 35.2227 17.7235C35.6134 17.3328 35.8329 16.8029 35.8329 16.2504ZM24.9996 20.0004C26.3257 20.0004 27.5975 20.5271 28.5352 21.4648C29.4728 22.4025 29.9996 23.6743 29.9996 25.0003C29.9996 26.3264 29.4728 27.5982 28.5352 28.5359C27.5975 29.4735 26.3257 30.0003 24.9996 30.0003C23.6736 30.0003 22.4018 29.4735 21.4641 28.5359C20.5264 27.5982 19.9996 26.3264 19.9996 25.0003C19.9996 23.6743 20.5264 22.4025 21.4641 21.4648C22.4018 20.5271 23.6736 20.0004 24.9996 20.0004Z" fill="white"/>
+                        </svg>
+                        <p class="location__contacts-text">/dokvet</p>
+                    </a>
+                    <a class="location__link" href="#">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 0C20.0555 0 15.222 1.46622 11.1108 4.21326C6.99952 6.96029 3.79521 10.8648 1.90302 15.4329C0.0108321 20.0011 -0.484251 25.0277 0.480379 29.8772C1.44501 34.7268 3.82603 39.1813 7.32234 42.6777C10.8187 46.174 15.2732 48.555 20.1227 49.5196C24.9723 50.4842 29.9989 49.9892 34.5671 48.097C39.1352 46.2048 43.0397 43.0005 45.7867 38.8892C48.5338 34.778 50 29.9445 50 25C50 18.3696 47.3661 12.0107 42.6777 7.32233C37.9893 2.63392 31.6304 0 25 0V0ZM34.5375 12.7312H31.0802C28.3719 12.7312 27.8448 14.0198 27.8448 15.9104V20.0771H34.3104V26.6062H27.8521V43.3667H21.1V26.6104H15.4625V20.0812H21.1V15.2656C21.1 9.67708 24.5146 6.63437 29.499 6.63437L34.5375 6.64166V12.7312Z" fill="#FFA14D"/>
+                        </svg>
+                        <p class="location__contacts-text">/dokvetcom</p>
+                    </a>
+                    <a class="location__link" href="#">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 0C20.0555 0 15.222 1.46622 11.1108 4.21326C6.99953 6.96029 3.79521 10.8648 1.90302 15.4329C0.0108321 20.0011 -0.484251 25.0277 0.480379 29.8772C1.44501 34.7268 3.82603 39.1813 7.32234 42.6777C10.8187 46.174 15.2732 48.555 20.1228 49.5196C24.9723 50.4842 29.9989 49.9892 34.5671 48.097C39.1352 46.2048 43.0397 43.0005 45.7867 38.8892C48.5338 34.778 50 29.9445 50 25C50 18.3696 47.3661 12.0107 42.6777 7.32233C37.9893 2.63392 31.6304 0 25 0V0ZM37.6813 27.7083C38.8878 28.8034 40.0372 29.9598 41.125 31.1729C41.5996 31.7161 42.0128 32.31 42.3573 32.9437C42.8323 33.8646 42.4031 34.875 41.5792 34.9302L36.4583 34.9302C35.8489 34.9757 35.2372 34.8795 34.6712 34.649C34.1052 34.4186 33.6002 34.0603 33.1958 33.6021C32.4875 32.8812 31.8302 32.1115 31.1479 31.3667C30.8773 31.0544 30.5674 30.7785 30.226 30.5458C30.0967 30.4318 29.9418 30.3508 29.7744 30.3096C29.607 30.2683 29.4322 30.2682 29.2647 30.3091C29.0972 30.35 28.9422 30.4308 28.8126 30.5446C28.6831 30.6583 28.583 30.8017 28.5208 30.9625C28.1582 31.7086 27.9735 32.5287 27.9813 33.3583C27.925 34.5656 27.5646 34.8812 26.35 34.9385C23.8055 35.1372 21.2584 34.5891 19.0208 33.3615C17.0702 32.1868 15.3894 30.6136 14.0885 28.7448C11.5183 25.1296 9.34204 21.2499 7.59689 17.1719C7.18751 16.2594 7.48647 15.7719 8.49272 15.7531C10.1594 15.7208 11.8354 15.725 13.5073 15.7531C13.8197 15.7568 14.1229 15.8597 14.373 16.047C14.6232 16.2342 14.8074 16.4961 14.899 16.7948C15.786 19.0178 16.9265 21.1311 18.2979 23.0927C18.6397 23.633 19.075 24.1081 19.5833 24.4958C19.6823 24.5979 19.8073 24.671 19.9448 24.7071C20.0823 24.7433 20.2271 24.7413 20.3635 24.7012C20.4999 24.6611 20.6227 24.5844 20.7188 24.4796C20.8148 24.3747 20.8804 24.2456 20.9083 24.1062C21.0759 23.684 21.1754 23.2378 21.2031 22.7844C21.3577 21.2435 21.3305 19.6897 21.1219 18.1552C21.0901 17.717 20.9098 17.3026 20.6107 16.9807C20.3117 16.6587 19.9118 16.4484 19.4771 16.3844C18.9886 16.2917 19.0604 16.1104 19.2979 15.8312C19.4742 15.5805 19.7103 15.3777 19.9848 15.2413C20.2593 15.1049 20.5635 15.0391 20.8698 15.05L26.6563 15.05C27.5688 15.2292 27.7729 15.6385 27.8969 16.5573L27.8969 22.9875C27.8865 23.3427 28.075 24.3969 28.7136 24.6292C29.225 24.7979 29.5625 24.3875 29.8688 24.0635C31.2007 22.5666 32.3001 20.8779 33.1302 19.0542C33.5208 18.2604 33.8594 17.4396 34.1854 16.6177C34.2661 16.3399 34.4405 16.0987 34.6791 15.9352C34.9177 15.7716 35.2056 15.6959 35.4938 15.7208L41.0656 15.7271C41.2307 15.7227 41.3959 15.7325 41.5594 15.7562C42.4969 15.9167 42.7563 16.3208 42.4656 17.2375C41.9379 18.6281 41.1902 19.9248 40.251 21.0781C39.3198 22.3646 38.3271 23.6073 37.4052 24.9C36.5625 26.0833 36.6292 26.6781 37.6813 27.7083Z" fill="#FFA14D"/>
+                        </svg>
+                        <p class="location__contacts-text">/dokvet</p>
+                    </a>
+                </div>
+            </div>
+            <div class="location__map-wrapp">
+                <div class="container">
+                    <div class="location__map-box">
+                        <div class="location__map-inner">
+                            <h3 class="location__map-head">Санкт-Петербург, ул. Коллонтай, 11</h3>
+                            <p class="location__map-text">
+                                <svg width="30" height="24" viewBox="0 0 30 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.8632 0L15 15.3318L10.1371 0C4.3522 1.98836 0 7.3822 0 13.5659C0 17.2904 1.51948 20.725 3.97772 23.2564H11.0283L11.7675 20.0512C3.34439 16.7509 4.93706 6.52425 7.9906 4.85493C8.35305 4.96392 13.6643 23.181 13.6643 23.181C13.7368 23.181 13.9725 23.181 14.2605 23.181C14.3214 23.181 14.5504 23.181 14.8359 23.181C14.9392 23.181 15.0507 23.181 15.1638 23.181C15.3577 23.181 15.5589 23.181 15.7388 23.181C16.0271 23.181 16.2625 23.181 16.3354 23.181C16.3354 23.181 21.647 4.96392 22.0091 4.85493C25.0629 6.52425 26.655 16.7509 18.2319 20.0512L18.9714 23.2564H26.022C28.4805 20.725 30 17.2904 30 13.5659C30 7.3822 25.6478 1.98836 19.8632 0Z" fill="#FF0000" fill-opacity="0.6"/>
+                                </svg>
+                                Проспект Большевиков
+                            </p>
+                            <p class="location__map-text2">Автобусные остановки:</p>
+                            <span class="location__map-span">- Улица Белышева 
+                                (авт. 191, трол. 33,  маршр. К-269, К-83, К-254)
+                                </span>
+                            <span class="location__map-span">- Искровский проспект 
+                                (авт. 118, трол. 12, маршр. К-155А, К-12, К 83)</span>
+                            <p class="location__map-text2">Парковка на территории для пациентов и их хозяев</p>
+                            <a class="location__map-link" href="#">
+                                Построить маршрут на Яндекс.Карты
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325518.68788745237!2d30.252506847162483!3d50.40169903650281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1642611355482!5m2!1sru!2sua" width="100%" height="707px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+
+            </div>
+        </div>
+        <h1 class="footer__head">PORTFOLIO</h1>
+    </footer>
+  </div>
+    <script src="js/main.min.js"></script>
+    <script src="https://kit.fontawesome.com/031e176c4d.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
