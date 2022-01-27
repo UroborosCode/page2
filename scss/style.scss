@@ -1,0 +1,609 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+@import 'media';
+@import 'main-menu';
+
+
+
+// font-family: 'Roboto', sans-serif;
+
+// all
+
+.all-head{
+    font-size: 46px;
+    line-height: 69px;
+    @extend %roboto-fw5;
+    margin-bottom: 48px;
+}
+//breadcrumbs
+
+.breadcrumbs{
+    position: relative;
+    z-index: 10;
+    // background: rgba(#DFDFDF, .5);
+    padding: 13px 14px;
+    font-weight: 400;
+    
+    &__list{
+      display: flex;
+    }
+    &__item::after{
+      content: '> ';
+      font-weight: 400;
+        color: #FFC38D;
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    &__item:last-child > a{
+        color: #FF7800;
+    }
+    &__item:last-child::after{
+      display: none;
+    }
+    &__link{
+        position: relative;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(#FFA14D, .6) ;
+    }
+    &__link-p{
+        padding-left: 27px;
+    }
+    &__link > svg{
+        position: absolute;
+        left: 0;
+        top: -5px;
+    }
+}
+.header{
+    &__box{
+        background: #1B274A;
+
+    }
+    &__box-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__box-link-tell{
+        display: flex;
+    }
+    &__box-link-tell > a:first-child{
+        margin-right: 8px;
+        padding-right: 8px;
+        display: block;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: #FFF;
+        }
+    }
+    &__box-link-tell > a:last-child{
+        padding-left: 0;
+    }
+    &__address,
+    &__time,
+    &__link-tell{
+        position: relative;
+        padding-left: 20px;
+    }
+    &__link-tell > i,
+    &__time > i,
+    &__address > i{
+            position: absolute;
+            left: 0;
+            color: #FFF;
+            top: 2px;
+    }
+    &__c1,
+    &__c2{
+        font-size: 16px;
+        line-height: 24px;
+        @extend %roboto-fw4;
+    }
+    &__c1{
+        color: #FFA14D;
+    }
+    &__c2{
+        color: #FFF;
+    }
+    &__btn{
+        @extend %roboto-fw5;
+        color: #FFF;
+        background: #ff7800;
+        border: none;
+        max-width: 208px;
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+        line-height: 21px;
+            transition: 0.4s;
+            position: relative;
+        &:hover{
+            background: #FFA14D;
+            transition: 0.4s;
+            color: #ff7800;
+        }
+        &:hover > svg{
+            transition: 0.4s;
+            stroke: #ff7800;
+        }
+        &:hover > svg > path{
+            fill: #ff7800;
+        }
+    }
+    &__btn > svg{
+        position: absolute;
+        top: 11px;
+        left: 30px;
+    }
+    &__box-b{
+        margin-top: 20px;
+        margin-bottom: 22px;
+    }
+    &__box-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__box-logo{
+        display: flex;
+        align-items: center;
+    }
+    &__logo-inf{
+        margin-left: 12px;
+    }
+    &__logo-head{
+        font-size: 28px;
+        line-height: 33px;
+        @extend %roboto-fw5;
+    }
+    &__logo-text{
+        font-size: 10px;
+        @extend %roboto-fw5;
+        line-height: 12px;
+    }
+    &__nav{
+        display: flex;
+    }
+    &__list-item{
+        display: none;
+    }
+    &__nav-link,
+    &__list-item-text{
+        font-size: 18px;
+        position: relative;
+        line-height: 24px;
+        @extend %roboto-fw5;
+        margin-left: 40px;
+        color: #1B274A;
+        transition: 0.2s;
+        margin-right: 40px;
+        &:hover{
+            transition: 0.2s;
+            color: #FF7800;
+        }
+    }
+    &__list-item-text{
+        padding-right: 12px;
+    }    
+    &__list-item-text > svg{
+        position: absolute;
+        right: 0;
+        top: 40%;
+    }
+    &__nav-media{
+        display: none;
+    }
+    &__media-menu-nav-link,
+    &__media-menu-list-item-text{
+        margin-top: 20px;
+        display: block;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 24px;
+        @extend %roboto-fw5;
+    }
+    &__media-menu-close{
+        display: none;
+    }
+}
+
+.footer{
+    &__head{
+        background: #000;
+        text-align: center;
+        padding: 20px;
+    }
+}
+// first-box
+.first-box{
+    margin-bottom: 96px;
+    padding-bottom: 64px;
+    position: relative;
+    &::before{
+        content: '';
+        background: #FFA14D;
+        position: absolute;
+        height: 1px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+    &__inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 154px;
+    }
+    &__list{
+        margin-left: 50px;
+    }
+    &__list > li{
+        color: #FF7800;
+        list-style-type: disc;
+    }
+    &__list-item{
+        margin-bottom: 32px;
+    }
+    &__text1,
+    &__text2,
+    &__text3{
+        font-size: 22px;
+        line-height: 33px;
+    }
+    &__text1{
+        @extend %roboto-fw5;
+        margin-bottom: 32px;
+    }
+    &__text2{
+        @extend %roboto-fw3;
+    }
+    &__text3{
+        @extend %roboto-fw4;
+        display: inline-block;
+    }
+}
+// vacancy
+.vacancy{
+    margin-bottom: 96px;
+    &__active{
+        display: none;
+    }
+    &__btn-box{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #3897F0;
+        background: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px 62px;
+        margin-bottom: 32px;
+    }
+    &__btn-span{
+        font-size: 32px;
+        line-height: 40px;
+        color: #3897F0;
+        @extend %roboto-fw4;
+    }
+    &__btn-p{
+        color: #3897F0;
+        font-size: 14px;
+        line-height: 20px;
+        @extend %roboto-fw4;
+        display: flex;
+        align-items: center;
+    }
+    &__btn-box-active{
+        border-bottom: none;
+    }
+    &__btn-box-active > span{
+        color: #FF7800;
+    }
+    &__btn-box-active > div:last-child > p{
+        display: none;
+    }
+    &__btn-box-active > div:last-child > p ~ i{
+        display: none;
+    }
+    &__btn-box-active > div:last-child > p ~ i:last-child{
+        display: block !important;
+    }
+    &__box-marc > i{
+        display: block;
+        margin-left: 5px;
+    }
+    &__marc-down{
+        color: #3897F0;
+    }
+    &__marc-up{
+        display: none !important;
+        color: #FF7800;
+    }
+    &__box-marc{
+        display: flex;
+    }
+    // -------------------------------------
+    &__box-content{
+        position: relative;
+        padding-bottom: 64px;
+        &::before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: #FFA14D;
+        }
+    }
+    &__box-content-head{
+        font-size: 32px;
+        line-height: 40px;
+        @extend %roboto-fw5;
+        display: block;
+        margin-bottom: 32px;
+    }
+    &__box-content-list,
+    &__box-content-list-num{
+        margin-left: 50px;
+    }
+    &__box-content-list-item,
+    &__box-content-list-item-num{
+        font-size: 22px;
+        line-height: 33px; 
+        margin-bottom: 9px;
+        margin-top: 9px;
+        @extend %roboto-fw4;
+    }
+    &__box-content-list-item > span,
+    &__box-content-list-item-num > span{
+        color: #1b274a;
+    }
+    &__box-content-list-num > li{
+        color: #FF7800;
+    }
+    &__box-content-list > li{
+        color: #FF7800;
+        list-style-type: disc;
+    }
+    &__box-content-text{
+        margin-bottom: 48px;
+        margin-top: 23px;
+        display: block;
+        font-size: 22px;
+        line-height: 33px;
+        @extend %roboto-fw4;
+    }
+    &__box-content-link{
+        padding: 18px 32px;
+        background: #FF7800;
+        color: #FFF;
+        font-size: 18px;
+        line-height: 27px;
+        @extend %roboto-fw5;
+        border-radius: 4px;
+        transition: 0.4s;
+        &:hover{
+            transition: 0.4s;
+            background: #FFA14D;
+        }
+        &:active{
+            transition: 0.4s;
+            background: #B35300;
+        }
+    }
+}
+// choose
+.choose{
+    &__inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 120px;
+        grid-gap: 100px;
+        position: relative;
+    }
+    &__content{
+        position: relative;
+    }
+    &__content-box{
+        position: absolute;
+        bottom: 0;
+    }
+    &__content-head{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 32px;
+        @extend %roboto-fw5;
+    }
+    &__content-text{
+        font-size: 22px;
+        line-height: 33px;
+        @extend %roboto-fw4;
+    }
+    &__content-grid1{
+        grid-column-start: 2;
+        grid-row-end: 2;
+    }
+}
+// feedback
+.feedback{
+    margin-bottom: 120px;
+    &__box{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    &__box-img{
+        max-width: 449px;
+    }
+    &__box-img-wrapp{
+        position: relative;
+        max-width: 449px;
+        width: 100%;
+    }
+    &__box-img-wrapp > svg{
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+    }
+    &__name{
+        font-size: 22px;
+        line-height: 33px;
+        text-align: center;
+        @extend %roboto-fw5;
+        margin-top: 24px;
+    }
+    &__position{
+        font-size: 16px;
+        line-height: 24px;
+        @extend %roboto-fw4;
+        text-align: center;
+        margin-top: 18px;
+    }
+    &__form-head{
+        font-size: 22px;
+        line-height: 33px;
+        @extend %roboto-fw5;
+        margin-bottom: 32px;
+    }
+    &__form-text{
+        font-size: 16px;
+        line-height: 24px;
+        @extend %roboto-fw4;
+        margin-bottom: 32px;
+    }
+    &__form-mask{
+        margin-bottom: 24px;
+    }
+    &__form-input{
+        padding: 18px 6px;
+        color: #1B274A;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #1B274A;
+    }
+    &__form-mark{
+        display: block;
+        font-size: 14px;
+        line-height: 16px;
+        @extend %roboto-fw4;
+        margin-bottom: 14px;
+    }
+    &__form-textarea{
+        width: 100%;
+        border: none;
+        max-height: 92px;
+        resize: none;
+        outline: none;
+        border-bottom: 1px solid #1B274A;
+    }
+    &__form-mask-checkbox{
+        display: flex;
+    }
+    &__form-checkbox{
+        height: 24px;
+        width: 24px;
+        border-radius: 8px;
+        background-color: #000;
+    }
+    &__form-mask-checkbox > p{
+        font-size: 12px;
+        line-height: 14px;
+        @extend %roboto-fw4;
+        width: 70%;    
+    }
+    &__form-link{
+        color: #FF7800;
+    }
+    &__form-submit{
+        border: none;
+        background: #FF7800;
+        padding: 18px 32px;
+        color: #FFF;
+        font-size: 18px;
+        line-height: 27px;
+        @extend %roboto-fw5;
+        transition: 0.4s;
+        &:hover{
+            transition: 0.4s;
+            background: #FFA14D;
+        }
+        &:active{
+            transition: 0.4s;
+            background: #B35300;
+        }
+    }
+}
+// location
+.location{
+    &__contacts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 19px;
+    }
+    &__link{
+        align-items: center;
+        display: flex;
+        margin-left: 32px;
+        margin-right: 32px;
+        color: #FF7800;
+        font-size: 24px;
+        line-height: 32px;
+        @extend %roboto-fw5;
+    }
+    &__link > svg{
+        margin-right: 24px;
+    }
+    &__map-box{
+        position: relative;
+    }
+    &__map-inner{
+        position: absolute;
+        padding: 64px 100px;
+        top: 48px;
+        left: 0;
+        background: #FFF;
+    }
+    &__map-head{
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 32px;
+        @extend %roboto-fw5;
+    }
+    &__map-text{
+        font-size: 22px;
+        line-height: 33px;
+        @extend %roboto-fw5;
+        margin-bottom: 18px;
+    }
+    &__map-text2{
+        font-size: 22px;
+        line-height: 33px;
+        @extend %roboto-fw5;
+        margin-top: 52px;
+    }
+    &__map-span{
+        display: block;
+        margin-top: 18px;
+        max-width: 480px;
+    }
+    &__map-link{
+        color: #FF7800;
+        font-size: 22px;
+        line-height: 33px;
+        @extend %roboto-fw5;
+        margin-top: 68px;
+        display: block;
+    }
+}

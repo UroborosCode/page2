@@ -1,0 +1,205 @@
+@media screen and (max-width: 1025px){
+    .header{
+        &__time{
+            display: none !important;
+        }
+    }
+}
+@media screen and (max-width: 775px){
+    .header{
+        &__btn{
+            max-width: 64px !important;
+        }
+        &__btn > svg{
+            position: relative !important;
+            top: 0 !important;
+            left: 0 !important; 
+        }
+        &__box-link-tell{
+            display: none !important;
+        }
+        &__btn-text{
+            display: none;
+        }
+        &__nav{
+            display: none !important;
+        }
+        &__nav-media{
+            display: block !important;
+        }
+        &__nav-media-btn{
+            border: none;
+            background: inherit;
+        }
+        &__media-menu{
+            position: absolute;
+            background: rgba(#000, 0.4);
+            min-height: 100%;
+            min-width: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        &__media-menu-nav{
+            position: absolute;
+            margin: 0 auto;
+            top: 50px;
+            left: 50px;
+            right: 50px;
+            bottom: 50px;
+            z-index: 100;
+            padding: 50px 50px;
+            text-align: center;
+            background: #FFF;
+        }
+       &__media-menu-list-item{
+           display: none;
+       }
+       &__media-menu-btn-close{
+           position: absolute;
+           background: inherit;
+           border: none;
+           color: red;
+           font-size: 30px;
+           top: 5px;
+           right: 5px;
+       }
+    }
+    .all-head{
+        font-size: 36px !important;
+        line-height: 40px !important;
+    }
+    .first-box{
+        &__inner{
+            display: block !important;
+        }
+        &__images{
+            display: none;
+        }
+    }
+    .vacancy{
+        &__btn-p{
+            display: none !important;
+        }
+        &__btn-box{
+            padding: 5px 5px !important;
+        }
+    }
+    .choose{
+        &__inner{
+            display: block !important;
+        }
+        &__images{
+            margin: 0 auto;
+        }
+        &__content-box{
+            position: relative !important;
+        }
+    }
+    .feedback{
+        &__box{
+            display: block !important;
+        }
+        &__box-img{
+            display: none;
+        }
+    }
+    .location{
+        &__map-inner{
+            position: relative !important;
+            top: 0 !important;
+            padding: 48px 0px !important; 
+        }
+        &__contacts{
+            justify-content: space-between !important;
+        }
+        &__contacts-text{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 540px){
+    .all-head{
+        font-size: 24px !important;
+        line-height: 32px !important;
+    }
+    .first-box{
+        margin-bottom: 48px !important;
+        &__text1{
+            font-size: 18px !important;
+            line-height: 22px !important;
+        }
+        &__text2{
+            font-size: 14px !important;
+            line-height: 20px !important;
+        }
+        &__text3{
+            font-size: 14px !important;
+            line-height: 20px !important;
+        }
+    }
+    .vacancy{
+        &__btn-span{
+            font-size: 14px !important;
+            line-height: 20px !important;
+            text-align: left;
+        }
+    }
+    .choose{
+        &__content-head{
+            font-size: 18px !important;
+            line-height: 22px !important;
+        }
+        &__content-text{
+            font-size: 14px !important;
+            line-height: 20px !important;
+        }
+    }
+    .feedback{
+        &__form-head{
+            font-size: 18px !important;
+            line-height: 22px !important;
+            margin-bottom: 24px !important;
+        }
+        &__form-text{
+            font-size: 12px !important;
+            line-height: 14px !important;
+            margin-bottom: 24px !important;
+        }
+        &__form-submit{
+            width: 100% !important;
+            border-radius: 8px;
+        }
+
+    }
+    .location{
+        &__map-inner{
+            padding: 32px 0 !important;
+        }
+        &__map-head{
+            font-size: 24px !important;
+            line-height: 32px !important;
+        }
+        &__map-text{
+            font-size: 18px !important;
+            line-height: 22px !important;
+        }
+        &__map-text2{
+            font-size: 18px !important;
+            line-height: 22px !important;
+        }
+        &__map-span{
+            font-size: 14px !important;
+            line-height: 20px !important;
+        }
+        &__map-link{
+            font-size: 18px !important;
+            line-height: 22px !important;
+            margin-top: 24px !important;
+        }
+        &__link{
+            margin-left: 0 !important;
+        }
+    }
+}

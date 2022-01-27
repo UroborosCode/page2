@@ -1,0 +1,52 @@
+html,
+body {
+	height: 100%;
+	color: #2d404c;
+}
+aside{
+	position: relative;
+	float: left;
+	max-width: 320px;
+}
+a,
+button{
+	cursor: pointer;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-fluid{
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 0;
+}
+
+.slick-dots{
+	position: absolute;
+	right: -40px;
+	top: 200px;
+	color: red;
+}
+.slick-dots > li > button{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	background: #000;
+}
+
